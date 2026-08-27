@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0A0A0F;
+    color: #ffffff;
+    overflow: hidden;
+  }
+
+  h1, h2, h3, .font-racing {
+    font-family: 'Orbitron', 'Chakra Petch', sans-serif;
+  }
+
+  .font-tech {
+    font-family: 'Chakra Petch', monospace;
+  }
+}
+
+/* Elegant Dark Radial Dot Grid */
+.bg-elegant-grid {
+  background-color: #0A0A0F;
+  background-image: radial-gradient(#1A1A2E 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Racing Glassmorphic and Cyber Effects */
+.hud-glow {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.7), 0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+.nitro-glow {
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.9), 0 0 24px rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+}
+
+.brake-glow {
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.9), 0 0 24px rgba(220, 38, 38, 0.6);
+}
+
+.speedo-gradient {
+  background: conic-gradient(from 180deg at 50% 50%, #06b6d4 0deg, #3b82f6 120deg, #f59e0b 200deg, #ef4444 260deg);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.6)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 18px rgba(6, 182, 212, 0.95)); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.5s infinite ease-in-out;
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.5);
+}
+

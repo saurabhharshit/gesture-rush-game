@@ -1,0 +1,6 @@
+{
+  "name": "GestureRush: AI Racing",
+  "description": "High-octane AI computer-vision gesture controlled car racing game featuring real-time hand tracking, dynamic 3D track physics, AI rivals, and rich audio.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
